@@ -1,56 +1,29 @@
 ​<!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>帅昕</title>
     <style>
-
-   .flex
-   {
-      /* 基本样式 */
-      width: 350px;
-      height: 200px;
-      border: 1px solid #555;
-      font: 14px Arial;
-
-      /*  建立弹性框 */
-      display: -webkit-flex;
-      -webkit-flex-direction: row;
-
-      display: flex;
-      flex-direction: row;
-   }
-
-   .flex > div
-   {
-      -webkit-flex: 4 1 auto;
-      flex: 4 1 auto;
-
-      width: 30px; /* 让过渡表现良好。（从/到"width:auto"的过渡
-                      至少在 Gecko 和 Webkit 上是有 bug 的。
-                      更多信息参见 http://bugzil.la/731886 ） */
-
-      -webkit-transition: width 0.7s ease-out;
-      transition: width 0.7s ease-out;
-   }
-
-   /* colors */
-   .flex > div:nth-child(1){ background : #009246; }
-   .flex > div:nth-child(2){ background : #F1F2F1; }
-   .flex > div:nth-child(3){ background : #CE2B37; }
-
-   .flex > div:hover
-   {
-        width: 200px;
-   }
-   
-   </style>
-    
+      .container{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0;
+      }
+      .container a{
+        display: inline-block;
+        padding: 1em;
+        text-decoration: none;
+        background: deepskyblue;
+        margin: auto;
+      }
+      .container a:hover{
+        background: #00b7f5;
+      }
+    </style>
  </head>
  <body>
-  <p>Flexbox nuovo</p>
-  <div class="flex">
-    <div>uno</div>
-    <div>due</div>
-    <div>tre</div>
-  </div>
+    <div class="container">
+      <a href="./flex-test/flex.html">bottomBar切换练习</a>
+      <a href="./flex-test/flex.html">flex自适应导航练习</a>
+    </div>
  </body>
 </html>
