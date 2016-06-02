@@ -1,0 +1,37 @@
+.container{
+  display: flex;
+  list-style: none;
+  background: deepskyblue;
+  flex-flow: row no-wrap;
+  justify-content: flex-end;
+  margin: 0px;
+  padding: 0;
+}
+.item{
+  text-decoration: none;
+  padding: 1em;
+  text-align: center;
+  color: white;
+  display: block;
+}
+.item:hover{
+  background: darken(deepskyblue, 2%);
+}
+
+@media all and (max-width: 800px){
+  .container{
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px){
+  .container{
+    flex-flow: column wrap;
+  }
+  .item{
+    border-bottom: solid 1px white;
+  }
+  li:last-of-type a{
+    border-bottom: none;
+  }
+}
