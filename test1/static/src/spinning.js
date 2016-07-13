@@ -12,6 +12,7 @@ define(function (require, exports, module) {
 
 	Spinning.prototype.render = function (argument) {
 		this._init();
+		$(this.icons).css('display', 'inline-block');
 		this._spin();
 	}
 
