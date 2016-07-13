@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>旋转的郭丢丢</title>
+	<style type="text/css">
+		html{font-size: 30px;}
+		#container{ position: relative; margin: 1rem 3rem;}
+		.item{display: inline-block;position: relative; background: green; color: white; width: 2rem; height: 2rem; text-align: center; line-height: 2rem;opacity: 0.6;transition-duration: 0.8s;transition-property: transform; -webkit-transition-duration: 0.8s; -moz-transition-duration: 0.8s; -o-transition-duration: 0.8s;cursor: pointer;    font-weight: bold; font-style: normal; font-size: 1rem;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="item">旋</div>
+		<div class="item">转</div>
+		<div class="item">的</div>
+		<div class="item">郭</div>
+		<div class="item">丢</div>
+		<div class="item">丢</div>
+	</div>
+	<script type="text/javascript" src="../sea-modules/seajs/seajs/2.2.0/sea.js"></script>
+	<script type="text/javascript">
+		seajs.config({
+			base : '../sea-modules/',
+			alias : {
+				'jquery' : 'jquery/jquery/1.10.1/jquery.js'
+			}			
+		});
+		seajs.use('../static/src/hello', function (page) {
+			page();
+		});
+
+	</script>
+
+</body>
+</html>
