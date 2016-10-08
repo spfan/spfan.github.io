@@ -2,7 +2,7 @@
 (function (doc, win, $) {
     var _Tpl = {
             collection :    
-                    '<div class="profile-collection" data-zhdesc="{zh_desc}" data-endesc="{en_desc}">'+
+                    '<div class="profile-collection" style="height:' + (document.documentElement.clientHeight || 675) + 'px" data-zhdesc="{zh_desc}" data-endesc="{en_desc}">'+
                     '    <div class="profile-collection-contect">'+
                     '        <div class="profile-collection-contect-imgs j_iSlider-wrapper">'+
                     '        </div>'+
@@ -64,9 +64,17 @@
     }
 
     function loadImg() {
-        var imgs = [],
+        var imgs = [
+            'icon/first.png',
+            'icon/last.png',
+            'icon/left.png',
+            'icon/profile.png',
+            'icon/right.png',
+            'icon/rong.png'
+        ],
             total = 0,
             cur  = 0;
+
         // 拉取作品图片
         _Images.forEach(function(d, i) {
             d.forEach(function(e, j){

@@ -9,21 +9,22 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 @media screen and (max-height:420px),screen and (max-width:420px) and (orientation:landscape){header.main-header{height:300px}header.main-header .inner{padding-top:40px}.page-container{margin-top:300px}.panel .content{padding:0 22px}.panel span.long{display:none}.panel p.description{font-size:24px;line-height:26px}.panel.about p.infos{margin-top:14px}.panel .buttons{bottom:20px!important;margin:0!important}.panel.newsletter .description{margin-bottom:10px!important}.panel.newsletter form input[type=text]{height:50px;width:220px;padding-left:18px;line-height:50px;font-size:12px}.panel.newsletter form input[type=submit]{height:50px;width:50px;line-height:50px;font-size:12px}.panel .inner .logo{top:20px!important;margin-top:0!important}.page-artist .more-artists{padding-top:0!important}.panel.artist .inner .separator{bottom:35px!important}.panel.artist .inner .title{bottom:50%!important;top:auto!important;margin:0 0 -43px!important;font-size:60px}}
 @media screen and (min-height:800px),screen and (min-width:1280px){.panel.jacques-olivar p.description{font-size:38px;line-height:41px}.panel.donja-pitsch p.description{font-size:43px;line-height:53px}.panel.alexandre-roberdet p.description{font-size:46px;line-height:56px}.panel.jacques-giaume p.description{font-size:43px;line-height:53px}.panel.lee-strickland p.description{font-size:38px;line-height:43px}.panel.nelson-simoneau p.description{font-size:50px;line-height:63px}.panel.frederic-azler p.description{font-size:58px;line-height:70px}}html.touch .cursor.close{display:none!important;top:40px;right:14px;left:auto;-webkit-transform:none!important;-moz-transform:none!important;-o-transform:none!important;transform:none!important}html.touch .page-artist .serie .images,html.touch .page-artist .serie .inner,html.touch .page-artist .serie .middle-label{-webkit-transform:none;-moz-transform:none;-o-transform:none;transform:none}
 
-
+body{
+	font-size: 0.15rem;
+}
 
 /*高度为屏幕高度*/
 .profile-collection{
 	position: relative;
 	background: white;
-	height: 654px;
 }
 /* 宽高为425，移动端会变小 */
 .profile-collection-contect{
 	position: absolute;
-	height: 425px;
-	width: 425px;
-	margin-top: -212px;
-	margin-left: -212px;
+	height: 4.25rem;
+	width: 4.25rem;
+	margin-top: -2.12rem;
+	margin-left: -2.12rem;
 	top: 50%;
 	left: 50%;
 }
@@ -100,8 +101,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
  * ===========================
  */
 .islider-btn-outer {
-	width: 25px;
-    height: 25px;
+	width: 0.25rem;
+    height: 0.25rem;
     cursor: pointer;
     bottom: 0;
     display: block;
@@ -109,24 +110,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     background-size: contain;
 }
 .islider-btn-outer.left {
-    left: -50px;
+    left: -0.5rem;
     background-image: url(icon/left.png);
 }
 .islider-btn-outer.right {
-    right: -50px;
+    right: -0.5rem;
     background-image: url(icon/right.png);
-}
-.islider-btn-inner {
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 /**
@@ -136,7 +125,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
  */
 .islider-nav-wrap{
 	position: absolute;
-	bottom: -50px;
+	bottom: -0.5rem;
 	width: 100%;
 	text-align: center;    
 	font-family: 'Microsoft Tai Le';
@@ -158,39 +147,26 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     text-align: center;
 }
 .iSlider-nav-first {
-    margin-right: 50px;
-    width: 15px;
-    height: 15px;
+    margin-right: 0.5rem;
+    width: 0.15rem;
+    height: 0.15rem;
     background-image: url(icon/first.png);
     background-size: contain;
     display: inline-block;
-    line-height: 15px;
-    margin-bottom: -1px;
+    line-height: 0.15rem;
+    margin-bottom: -0.01rem;
     opacity: 0;
 }
 .iSlider-nav-last {
 	cursor: pointer;
-    margin-left: 50px;
-    width: 15px;
-    height: 15px;
+    margin-left: 0.5rem;
+    width: 0.15rem;
+    height: 0.15rem;
     background-image: url(icon/last.png);
     background-size: contain;
     display: inline-block;
-    line-height: 15px;
-    margin-bottom: -1px;
-}
-.islider-dot {
-    position: relative;
-    display: inline-block;
-    width: 0.8em;
-    height: 0.8em;
-    border-radius: 50%;
-    border: 1px solid #ffffff;
-    list-style: none;
-    margin: 5px;
-}
-.islider-dot.active {
-    background-color: #ffffff;
+    line-height: 0.15rem;
+    margin-bottom: -0.01rem;
 }
 
 /**
@@ -254,7 +230,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 	color: #999;
 }
 .dialog-wrap-info-en-desc{
-    margin-top: 0.5rem;
+    margin-top: 10px;
     color: #999;
 }
 
