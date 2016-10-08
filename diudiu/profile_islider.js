@@ -121,7 +121,8 @@
                 isOverspread: 1,
                 animateTime: 800, // ms
                 plugins: ['nav', 'button'],
-                isTouchable : !os.isPc
+                isTouchable : !os.isPc,
+                fixPage: false
             });
         }
     }
