@@ -20,42 +20,33 @@
         _Images = [
                 [   
                     {
-                        content: '<div style="width:100%;height:100%;" class="alert"><img style="width:100%;height:100%;" src="http://r1.ykimg.com/054104085274F02D6A0A40636C798A21"></div>',
-                        img: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
+                        content: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
                     },
                     {
-                        content: '<div style="width:100%;height:100%;" class="alert"><img style="width:100%;height:100%;" src="http://r1.ykimg.com/054104085274F02D6A0A40636C798A21"></div>',
-                        img: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
+                        content: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
                     },
                     {
-                        content: '<div style="width:100%;height:100%;" class="alert"><img style="width:100%;height:100%;" src="http://r1.ykimg.com/054104085274F02D6A0A40636C798A21"></div>',
-                        img: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
+                        content: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
                     },
                     {
-                        content: '<div style="width:100%;height:100%;" class="alert"><img style="width:100%;height:100%;" src="http://r1.ykimg.com/054104085274F02D6A0A40636C798A21"></div>',
-                        img: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
+                        content: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
                     }
                 ],
                 [   
                     {
-                        content: '<div style="width:100%;height:100%;" class="alert"><img style="width:100%;height:100%;" src="http://r1.ykimg.com/054104085274F02D6A0A40636C798A21"></div>',
-                        img: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
+                        content: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
                     },
                     {
-                        content: '<div style="width:100%;height:100%;" class="alert"><img style="width:100%;height:100%;" src="http://r1.ykimg.com/054104085274F02D6A0A40636C798A21"></div>',
-                        img: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
+                        content: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
                     },
                     {
-                        content: '<div style="width:100%;height:100%;" class="alert"><img style="width:100%;height:100%;" src="http://r1.ykimg.com/054104085274F02D6A0A40636C798A21"></div>',
-                        img: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
+                        content: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
                     },
                     {
-                        content: '<div style="width:100%;height:100%;" class="alert"><img style="width:100%;height:100%;" src="http://r1.ykimg.com/054104085274F02D6A0A40636C798A21"></div>',
-                        img: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
+                        content: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
                     },
                     {
-                        content: '<div style="width:100%;height:100%;" class="alert"><img style="width:100%;height:100%;" src="http://r1.ykimg.com/054104085274F02D6A0A40636C798A21"></div>',
-                        img: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
+                        content: 'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
                     }
                 ]
         ],
@@ -79,7 +70,7 @@
         // 拉取作品图片
         _Images.forEach(function(d, i) {
             d.forEach(function(e, j){
-                imgs.push(e.img);
+                imgs.push(e.content);
             });
         });
         total = imgs.length;
