@@ -23,6 +23,8 @@ body{
 	position: absolute;
 	height: 4.25rem;
 	width: 4.25rem;
+	max-height: 425px;
+	max-width: 425px;
 	margin-top: -2.12rem;
 	margin-left: -2.12rem;
 	top: 50%;
