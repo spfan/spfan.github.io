@@ -149,19 +149,16 @@
                 _alert(e);
             });
 
-            $(doc).on('click', '.dialog-wrap-close', function(e) {
-                $('.dialog-back').remove();
-            });
         }else{
             fastClick($('#container')[0], function(e){
                 if(e.target.parentNode.className.indexOf('islider-sliding-focus') > -1){
                     _alert(e);
                 }
-                if(e.target.className.indexOf('dialog-wrap-close') > -1){
-                    $('.dialog-back').remove();
-                }
             });
         }
+        $(doc).on('click touchend', '.dialog-wrap-close', function(e) {
+            $('.dialog-back').remove();
+        });
     }
     function mktpl(data, tpl){
         for(var _k in data){
