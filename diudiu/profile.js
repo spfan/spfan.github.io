@@ -31,16 +31,16 @@
     function renderImages() {
         var images = [
             [   
-                'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21',
-                'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21',
-                'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21',
-                'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
-            ],
-            [   
-                'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21',
-                'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21',
-                'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21',
-                'http://r1.ykimg.com/054104085274F02D6A0A40636C798A21'
+                './work/freehand/1.png',
+                './work/freehand/2.png',
+                './work/freehand/3.png',
+                './work/freehand/4.png',
+                './work/freehand/5.png',
+                './work/freehand/6.png',
+                './work/freehand/7.png',
+                './work/freehand/8.png',
+                './work/freehand/9.png',
+                './work/freehand/10.png'
             ]
         ],
         _lis = [],
