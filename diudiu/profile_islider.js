@@ -20,6 +20,9 @@
         _Images = [
                 [
                     {
+                        content: './work/freehand/0.png'
+                    },
+                    {
                         content: './work/freehand/1.png'
                     },
                     {
