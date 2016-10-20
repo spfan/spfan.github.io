@@ -52,7 +52,15 @@
                     {
                         content: './work/freehand/10.png'
                     }
-                ]
+                ],[
+                    {
+                        content: './work/plane/0.png'
+                    }
+                ],[
+                {
+                    content: './work/interface/0.jpg'
+                }
+            ]
         ],
         _Param = {};
 
@@ -109,10 +117,10 @@
                 zh_desc: '手绘',
                 en_desc: 'FREEHAND'
             },
-            //     {
-            //     zh_desc: '平面设计',
-            //     en_desc: 'THE  PLANE DESIGN'
-            // }
+                {
+                zh_desc: '平面设计',
+                en_desc: 'THE  PLANE DESIGN'
+            }
             ];
 
         for (_i = 0, _l = _Images.length; _i < _l; _i++) {
