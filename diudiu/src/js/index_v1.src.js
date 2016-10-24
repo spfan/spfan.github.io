@@ -1,4 +1,10 @@
 
+var $ = require('webpack-zepto');
+var iSlider = require('./plugin/iSlider.min.js');
+require('./plugin/iSlider.plugin.button.js');
+require('./plugin/iSlider.plugin.nav.js');
+
+
 (function (doc, win, $) {
     var _Tpl = {
             collection :    
@@ -18,53 +24,54 @@
                 '</div>'
         },
         _Images = [
-                [
-                    {
-                        content: './work/freehand/0.png'
-                    },
-                    {
-                        content: './work/freehand/1.png'
-                    },
-                    {
-                        content: './work/freehand/2.png'
-                    },
-                    {
-                        content: './work/freehand/3.png'
-                    },
-                    {
-                        content: './work/freehand/4.png'
-                    },
-                    {
-                        content: './work/freehand/5.png'
-                    },
-                    {
-                        content: './work/freehand/6.png'
-                    },
-                    {
-                        content: './work/freehand/7.png'
-                    },
-                    {
-                        content: './work/freehand/8.png'
-                    },
-                    {
-                        content: './work/freehand/9.png'
-                    },
-                    {
-                        content: './work/freehand/10.png'
-                    }
-                ],[
-                    {
-                        content: './work/plane/0.png'
-                    }
-                ],[
+            [
                 {
-                    content: './work/interface/0.jpg'
+                    content: '../work/freehand/0.png'
+                },
+                {
+                    content: '../work/freehand/1.png'
+                },
+                {
+                    content: '../work/freehand/ollllllllllllllppppppplzÅ.png'
+                },
+                {
+                    content: '../work/freehand/3.png'
+                },
+                {
+                    content: '../work/freehand/4.png'
+                },
+                {
+                    content: '../work/freehand/5.png'
+                },
+                {
+                    content: '../work/freehand/6.png'
+                },
+                {
+                    content: '../work/freehand/7.png'
+                },
+                {
+                    content: '../work/freehand/8.png'
+                },
+                {
+                    content: '../work/freehand/9.png'
+                },
+                {
+                    content: '../work/freehand/10.png'
+                }
+            ],[
+                {
+                    content: '../work/plane/0.png'
+                }
+            ],[
+                {
+                    content: '../work/interface/0.jpg'
+                },
+                {
+                    content: '../work/interface/1.jpg'
                 }
             ]
         ],
         _Param = {};
-
-
 
     function init() {
         initElement();
@@ -77,13 +84,13 @@
 
     function loadImg() {
         var imgs = [
-            'icon/first.png',
-            'icon/last.png',
-            'icon/left.png',
-            'icon/profile.png',
-            'icon/right.png',
-            'icon/rong.png',
-            'icon/diu.png'
+            '../icon/first.png',
+            '../icon/last.png',
+            '../icon/left.png',
+            '../icon/profile.jpg',
+            '../icon/right.png',
+            '../icon/rong.png',
+            '../icon/diu.png'
         ],
             total = 0,
             cur  = 0;
@@ -116,12 +123,10 @@
             map = [{
                 zh_desc: '手绘',
                 en_desc: 'FREEHAND'
-            },
-                {
+            },{
                 zh_desc: '平面设计',
                 en_desc: 'THE  PLANE DESIGN'
-            }
-            ];
+            }];
 
         for (_i = 0, _l = _Images.length; _i < _l; _i++) {
             _item = $( mktpl(map[_i], _Tpl.collection) );
