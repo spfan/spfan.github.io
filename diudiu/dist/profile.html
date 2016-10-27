@@ -1,9 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html style="font-size: 100px;">
 <head>
-    <title></title>
+    <title>瀑布流</title>
+    <link rel="stylesheet" href="../profile.css">
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #container {
+            position: relative;
+        }
+
+        .box {
+            float: left;
+            padding: 15px 0 0 15px;
+        }
+
+        .box .box_img {
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 6px #cccccc;
+        }
+
+        .box_img img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
 
+    <!-- PANNEL LOADER -->
+    <div id="loader-view" style="display: none;" class="loader panel animated open">
+        <div class="inner">
+            <img class="big-logo" width="190" height="65" src="../icon/profile.jpg" alt="">
+            <span class="separator"><span id="load-progress" class="progress"></span></span>
+        </div>
+    </div>
+
+    <!-- <span class="font-dummy">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</span> -->
+
+    <header class="main-header expanded">
+        <div class="inner">
+            <h1>
+                <img src="http://www.valeriemartinez.com/src/img/white-logo.png" alt="THIS IS ABOUT ME"><br /><span>THIS IS ABOUT ME</span>
+            </h1>
+            <div class="buttons">
+                <a class="custom dark-background about" href="#">WHO<span class="longg"> AM I</span><span class="text-hover-container"><span class="text-hover">WHO<span class="longg"> AM I</span></span></span><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span><span class="bar bar-4"></span><span class="bar bar-1 hover"></span><span class="bar bar-2 hover"></span><span class="bar bar-3 hover"></span><span class="bar bar-4 hover"></span></a>
+                <!-- <a class="custom dark-background ajax back" href="http://www.valeriemartinez.com/"><span class="long">Back to </span>full list<span class="text-hover-container"><span class="text-hover"><span class="long">Back to </span>full list</span></span><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span><span class="bar bar-4"></span><span class="bar bar-1 hover"></span><span class="bar bar-2 hover"></span><span class="bar bar-3 hover"></span><span class="bar bar-4 hover"></span></a> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- PAGE -->
+    <section class="page-container translate-z-fix" id="container">
+
+        <!-- islider need -->
+       
+        
+    </section>
+
+    <footer>
+        <img class="logo" src="../icon/diu.png" alt="Logo Valerie Martinez">
+        <p class="footer-desc">
+                CONTACT ME THROUGH THE FOLLOWING WAYS
+        </p>
+        <p class="infos">
+            <span>Wechat. <a class="underline" target="_blank" href="javascript:;">SODA57F</a></span>        <br /><span>QQ. <a class="underline" href="javascript:;">491757849</a></span>        <br /><span>Tel. <a class="underline" href="tel:+8613811149441">+86 138 1114 9441</a></span>    
+        </p>
+        <!-- <div class="buttons">
+            <a class="custom" target="_blank" href="mailto:valerie@valeriemartinez.com">Email us<span class="text-hover-container"><span class="text-hover">Email us</span></span><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span><span class="bar bar-4"></span><span class="bar bar-1 hover"></span><span class="bar bar-2 hover"></span><span class="bar bar-3 hover"></span><span class="bar bar-4 hover"></span></a>
+            <a class="custom subscribe" target="_blank" href="#">Subscribe<span class="long"> to our newsletter</span><span class="text-hover-container"><span class="text-hover">Subscribe<span class="long"> to our newsletter</span></span></span><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span><span class="bar bar-4"></span><span class="bar bar-1 hover"></span><span class="bar bar-2 hover"></span><span class="bar bar-3 hover"></span><span class="bar bar-4 hover"></span></a>
+        </div> -->
+        <div class="credits">THANK YOU</div>
+    </footer>
 </body>
 </html>

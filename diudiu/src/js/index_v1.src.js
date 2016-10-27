@@ -79,7 +79,6 @@ require('./plugin/iSlider.plugin.nav.js');
     }
     function initElement() {
         loadImg();
-        
     }
 
     function loadImg() {

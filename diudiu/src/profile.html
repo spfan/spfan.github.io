@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html style="font-size: 100px;">
 <head>
     <title>瀑布流</title>
+    <link rel="stylesheet" href="../profile.css">
     <style type="text/css">
         * {
             margin: 0px;
@@ -14,6 +15,7 @@
 
         .box {
             float: left;
+            padding: 15px 0 0 15px;
         }
 
         .box .box_img {
@@ -30,110 +32,50 @@
     </style>
 </head>
 <body>
-    <div id="container">
-        <div class="box">
-            <div class="box_img">
-                <img src="imgs/1.jpg">
-            </div>
-        </div>
-        <div class="box">
-            <div class="box_img">
-                <img style="height: 200px;" src="imgs/1.jpg">
-            </div>
-        </div>
-        <div class="box">
-            <div class="box_img">
-                <img style="height: 300px;" src="imgs/1.jpg">
-            </div>
-        </div>
-        <div class="box">
-            <div class="box_img">
-                <img style="height: 110px;" src="imgs/1.jpg">
-            </div>
-        </div>
-        <div class="box">
-            <div class="box_img">
-                <img style="height: 50px;" src="imgs/1.jpg">
-            </div>
-        </div>
-        <div class="box">
-            <div class="box_img">
-                <img style="height: 300px;" src="imgs/1.jpg">
-            </div>
-        </div>
-        <div class="box">
-            <div class="box_img">
-                <img style="height: 300px;" src="imgs/1.jpg">
-            </div>
-        </div>
-        <div class="box">
-            <div class="box_img">
-                <img style="height: 110px;" src="imgs/1.jpg">
-            </div>
-        </div>
-        <div class="box">
-            <div class="box_img">
-                <img style="height: 50px;" src="imgs/1.jpg">
-            </div>
-        </div>
-        <div class="box">
-            <div class="box_img">
-                <img style="height: 300px;" src="imgs/1.jpg">
-            </div>
-        </div>
-        <div class="box">
-            <div class="box_img">
-                <img style="height: 300px;" src="imgs/1.jpg">
-            </div>
+
+    <!-- PANNEL LOADER -->
+    <div id="loader-view" style="display: none;" class="loader panel animated open">
+        <div class="inner">
+            <img class="big-logo" width="190" height="65" src="../icon/profile.jpg" alt="">
+            <span class="separator"><span id="load-progress" class="progress"></span></span>
         </div>
     </div>
-    <script type="text/javascript">
-        function location(parent, child) {
-           var vparent = document.getElementById(parent),
-                   childArray = getChild(vparent, child);
-           var imgWidth = childArray[0].offsetWidth;
-          var cols = Math.floor(document.documentElement.clientWidth / imgWidth); // 计算每行能容纳多少列
-           vparent.style.cssText = "width : " + imgWidth * cols + "px;margin:0 auto;";
 
-            var boxHeightArray = [];
-            for (var i = 0; i < childArray.length; i++) {
-              if (i < cols) {
-                  boxHeightArray[i] = childArray[i].offsetHeight;
-              } else {
-                   var minHeight = Math.min.apply(null, boxHeightArray);
-                  var minIndex = getIndex(boxHeightArray, minHeight);
+    <!-- <span class="font-dummy">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</span> -->
 
-                   childArray[i].style.position = "absolute";
-                   childArray[i].style.top = minHeight + "px";
-                   childArray[i].style.left = childArray[minIndex].offsetLeft + "px";
-                   boxHeightArray[minIndex] = boxHeightArray[minIndex] + childArray[i].offsetHeight;
-                }
-            }
-        }
+    <header class="main-header expanded">
+        <div class="inner">
+            <h1>
+                <img src="http://www.valeriemartinez.com/src/img/white-logo.png" alt="THIS IS ABOUT ME"><br /><span>THIS IS ABOUT ME</span>
+            </h1>
+            <div class="buttons">
+                <a class="custom dark-background about" href="#">WHO<span class="longg"> AM I</span><span class="text-hover-container"><span class="text-hover">WHO<span class="longg"> AM I</span></span></span><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span><span class="bar bar-4"></span><span class="bar bar-1 hover"></span><span class="bar bar-2 hover"></span><span class="bar bar-3 hover"></span><span class="bar bar-4 hover"></span></a>
+                <!-- <a class="custom dark-background ajax back" href="http://www.valeriemartinez.com/"><span class="long">Back to </span>full list<span class="text-hover-container"><span class="text-hover"><span class="long">Back to </span>full list</span></span><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span><span class="bar bar-4"></span><span class="bar bar-1 hover"></span><span class="bar bar-2 hover"></span><span class="bar bar-3 hover"></span><span class="bar bar-4 hover"></span></a> -->
+            </div>
+        </div>
+    </header>
 
-        function getIndex(boxHeightArray, mingHeight) {
-            for (var i = 0; i < boxHeightArray.length; i++) {
-                if (boxHeightArray[i] == mingHeight) {
-                    return i;
-                }
-            }
-        }
+    <!-- PAGE -->
+    <section class="page-container translate-z-fix" id="container">
 
-        function getChild(parent, child) {
-            var contentArray = [];
-            var allcontent = parent.getElementsByTagName("*");
-            for (var i = 0; i < allcontent.length; i++) {
-                if (allcontent[i].className == child) {
-                    contentArray.push(allcontent[i]);
-                }
-            }
-            return contentArray;
-        }
+        
+       
+        
+    </section>
 
-        location('container', 'box');
-
-
-    </script>
-
+    <footer>
+        <img class="logo" src="../icon/diu.png" alt="Logo Valerie Martinez">
+        <p class="footer-desc">
+                CONTACT ME THROUGH THE FOLLOWING WAYS
+        </p>
+        <p class="infos">
+            <span>Wechat. <a class="underline" target="_blank" href="javascript:;">SODA57F</a></span>        <br /><span>QQ. <a class="underline" href="javascript:;">491757849</a></span>        <br /><span>Tel. <a class="underline" href="tel:+8613811149441">+86 138 1114 9441</a></span>    
+        </p>
+        <!-- <div class="buttons">
+            <a class="custom" target="_blank" href="mailto:valerie@valeriemartinez.com">Email us<span class="text-hover-container"><span class="text-hover">Email us</span></span><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span><span class="bar bar-4"></span><span class="bar bar-1 hover"></span><span class="bar bar-2 hover"></span><span class="bar bar-3 hover"></span><span class="bar bar-4 hover"></span></a>
+            <a class="custom subscribe" target="_blank" href="#">Subscribe<span class="long"> to our newsletter</span><span class="text-hover-container"><span class="text-hover">Subscribe<span class="long"> to our newsletter</span></span></span><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span><span class="bar bar-4"></span><span class="bar bar-1 hover"></span><span class="bar bar-2 hover"></span><span class="bar bar-3 hover"></span><span class="bar bar-4 hover"></span></a>
+        </div> -->
+        <div class="credits">THANK YOU</div>
+    </footer>
 </body>
 </html>
