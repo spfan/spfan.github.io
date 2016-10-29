@@ -1,40 +1,13 @@
 <!DOCTYPE html>
-<html style="font-size: 100px;">
+<html>
 <head>
-    <title>瀑布流</title>
-    <link rel="stylesheet" href="../profile.css">
-    <style type="text/css">
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        #container {
-            position: relative;
-        }
-
-        .box {
-            float: left;
-            padding: 15px 0 0 15px;
-        }
-
-        .box .box_img {
-            padding: 10px;
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-            box-shadow: 0px 0px 6px #cccccc;
-        }
-
-        .box_img img {
-            width: 100px;
-            height: auto;
-        }
-    </style>
+    <title>DIU2</title>
+    <link rel="stylesheet" href="./css/profile.css">
 </head>
 <body>
 
     <!-- PANNEL LOADER -->
-    <div id="loader-view" style="display: none;" class="loader panel animated open">
+    <div id="loader-view" class="loader panel animated open">
         <div class="inner">
             <img class="big-logo" width="190" height="65" src="../icon/profile.jpg" alt="">
             <span class="separator"><span id="load-progress" class="progress"></span></span>
@@ -49,7 +22,7 @@
                 <img src="http://www.valeriemartinez.com/src/img/white-logo.png" alt="THIS IS ABOUT ME"><br /><span>THIS IS ABOUT ME</span>
             </h1>
             <div class="buttons">
-                <a class="custom dark-background about" href="#">WHO<span class="longg"> AM I</span><span class="text-hover-container"><span class="text-hover">WHO<span class="longg"> AM I</span></span></span><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span><span class="bar bar-4"></span><span class="bar bar-1 hover"></span><span class="bar bar-2 hover"></span><span class="bar bar-3 hover"></span><span class="bar bar-4 hover"></span></a>
+                <a class="custom dark-background about" id="me_btn" href="#">WHO<span class="longg"> AM I</span><span class="text-hover-container"><span class="text-hover">WHO<span class="longg"> AM I</span></span></span><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span><span class="bar bar-4"></span><span class="bar bar-1 hover"></span><span class="bar bar-2 hover"></span><span class="bar bar-3 hover"></span><span class="bar bar-4 hover"></span></a>
                 <!-- <a class="custom dark-background ajax back" href="http://www.valeriemartinez.com/"><span class="long">Back to </span>full list<span class="text-hover-container"><span class="text-hover"><span class="long">Back to </span>full list</span></span><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span><span class="bar bar-4"></span><span class="bar bar-1 hover"></span><span class="bar bar-2 hover"></span><span class="bar bar-3 hover"></span><span class="bar bar-4 hover"></span></a> -->
             </div>
         </div>
@@ -57,10 +30,86 @@
 
     <!-- PAGE -->
     <section class="page-container translate-z-fix" id="container">
-
-        
-       
-        
+        <div class="section-one">
+            <div class="section-one__wrap">
+                <div class="section-one__nav"></div>
+                <!-- <div class="section-one__content"> -->
+                <div class="section-one__hi">Welcome to me</div>
+                <div class="section-one__title">PAINTING</div>
+                <div class="section-one__subtitle">A growing histroy about my painting</div>
+                <div class="section-one__text">
+                    <p>我不会对每件事情都追求完美</p>
+                    <p>但是对于绘画我始终如一</p>
+                    <p>很幸运 可以一直做自己喜欢的事情</p>
+                    <p>艺考前的那段时光是我的启蒙期</p>
+                    <p>既然开始便不会停下</p>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <div class="section-two">
+            <div class="section-two__logo"></div>
+            <div class="section-two__bg"></div>
+            <div class="section-two__badge"></div>
+            <div class="section-two__content">
+                <div class="section-two__title">平面作品</div>
+                <div class="section-two__li">
+                    <div class="section-two__li_left">LOGO</div>
+                    <div class="section-two__li_right">字体设计</div>
+                </div>
+                <div class="section-two__li">
+                    <div class="section-two__li_left">VI宣传册</div>
+                    <div class="section-two__li_right">海报</div>
+                </div>
+                <div class="section-two__li">
+                    <div class="section-two__li_left">名片</div>
+                    <div class="section-two__li_right">书籍设计</div>
+                </div>
+                <div class="section-two__li">
+                    <div class="section-two__li_left">易拉宝</div>
+                    <div class="section-two__li_right">手提袋</div>
+                </div>
+            </div>
+            <div class="section-two__nav">
+                <span class="section-two__nav_desc">More</span>
+                <span class="section-two__nav_arrow"></span>
+            </div>
+        </div>
+        <div class="section-three">
+            <div class="section-three__pos">
+                <div class="section-three__en">
+                    <div class="section-three__en_title">INTERFACE</div>
+                    <div class="section-three__en_subtitle">
+                        <p>TRY</p>
+                        <p>MY BEST</p>
+                        <p>TO</p>
+                        <p>DO IT</p>
+                        <p>AT LAST</p>
+                    </div>
+                </div>
+                <div class="section-three__cn">
+                    <div class="section-three__cn_title">CARD</div>
+                    <div class="section-three__cn_subtitle">记录自己的小想法或产品页面</div>
+                    <div class="section-three__cn_title">APP UI</div>
+                    <div class="section-three__cn_subtitle">
+                        够旅游APP设计<br>
+                        合作公司专题页面<br>
+                        个人随感创造<br>
+                    </div>
+                    <div class="section-three__cn_title">WEB UI</div>
+                    <div class="section-three__cn_subtitle">
+                        够旅游官网设计<br>
+                        椰壳和优办项目<br>
+                        个人随感创造<br>
+                    </div>
+                    <div class="section-three__cn_title">CARD</div>
+                    <div class="section-three__cn_subtitle">
+                        拟物ICON和线性ICON 
+                    </div>
+                </div>
+            </div>
+            <div class="section-three__nav"></div>
+        </div>
     </section>
 
     <footer>
@@ -77,5 +126,36 @@
         </div> -->
         <div class="credits">THANK YOU</div>
     </footer>
+
+    <!-- 个人简介 -->
+    <div class="about panel saved fixed-logo animated" id="introduction" style="display: block;">
+        <div class="intro-wrap">
+            <div class="intro-wrap_desc">
+                <div class="intro-wrap_top-title">自我简介</div>
+                <div class="intro-wrap_title">
+                    郭玉洁 23岁 来自山西 毕业于北京印刷学院数字媒体艺术系<br>
+                    一直在北京潇洒，近日来深圳闯荡
+                </div>
+                <div class="intro-wrap_subtitle">
+                    <p>2010年开始疯狂画画模式</p>
+                    <p>2010年开始疯狂画画模式</p>
+                    <p>2010年开始疯狂画画模式</p>
+                    <p>2010年开始疯狂画画模式</p>
+                    <p>2010年开始疯狂画画模式</p>
+                </div>
+                <div class="intro-wrap_title intro-wrap_title_top">
+                    一些有的没的
+                </div>
+                <div class="intro-wrap_subtitle">
+                    巴拉啦啦啦啦啦啦啦啦巴拉啦啦啦啦啦啦啦啦巴拉啦啦啦啦啦啦啦啦巴拉啦啦啦啦啦啦啦啦巴拉啦啦啦啦啦啦啦啦
+                </div>
+            </div>
+            <div class="intro-wrap_img"></div>
+            <a class="intro-wrap_close j_close"></a>
+
+        </div> 
+    </div>
+
+    <script type="text/javascript" src="./js/index_v2.js?__inline"></script>
 </body>
 </html>

@@ -4,7 +4,9 @@ var webpack = require('gulp-webpack');
 var uglify = require('gulp-uglify');
 var hash = require('gulp-hash');
 var parseHtml = require('gulp-parseHtml');
-var rename    = require('gulp-rename')
+var rename    = require('gulp-rename');
+var sass = require('gulp-sass');
+var autoPrefix = require('gulp-autoprefixer');
 
 var releaseRelativePath = './dist/';
 var webpackConfig       = './webpack.config.js';
@@ -18,6 +20,17 @@ gulp.task('watch-html', function () {
 	});	
 });
 
+gulp.task('sass', function() {
+	var watchPath = ['src/css/*.sass', 'src/css/*.scss'];
+	var destPath = releaseRelativePath + 'css/';
+	gulp.watch(watchPath, function( event ){
+		gulp.src(watchPath)
+			.pipe(sass().on('error', sass.logError))
+			.pipe( autoPrefix() )
+			.pipe(gulp.dest( destPath ));
+	});
+});
+
 gulp.task('watch-module', function() {
 	var watchPath = ['src/js/**', 'src/js/plugin/**', 'src/css/**'];
 
@@ -28,7 +41,7 @@ gulp.task('watch-module', function() {
 	});
 });
 
-gulp.task('watch', ['watch-html', 'watch-module']);
+gulp.task('watch', ['watch-html', 'sass', 'watch-module']);
 
 gulp.task('release-module', function() {
 	var watchPath = ['src/js/**', 'src/js/plugin/**', 'src/css/**'];
@@ -56,7 +69,7 @@ gulp.task('release-module', function() {
 		.pipe( gulp.dest( './' ) )
 });
 
-gulp.task('release',['release-module'], function() {
+gulp.task('release',['release-module', 'sass'], function() {
 	var watchPath = ['src/*.html'];
 	gulp.src( watchPath )
 		.pipe( parseHtml( releaseRelativePath,'' ) )
