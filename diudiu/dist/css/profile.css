@@ -48,55 +48,21 @@ html {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-@font-face {
-  font-family: 'Austin Light';
-  src: url(fonts/Austin-Light.eot);
-  src: url(fonts/Austin-Light.eot?#iefix) format("embedded-opentype"), url(fonts/Austin-Light.woff) format("woff"), url(fonts/Austin-Light.ttf) format("truetype"), url(fonts/Austin-Light.svg#231d156ffcd30d4240f98e2579cb3032) format("svg");
-  font-style: normal;
-  font-weight: 200; }
-
-@font-face {
-  font-family: 'Austin Medium';
-  src: url(fonts/Austin-MediumItalic.eot);
-  src: url(fonts/Austin-MediumItalic.eot?#iefix) format("embedded-opentype"), url(fonts/Austin-MediumItalic.woff) format("woff"), url(fonts/Austin-MediumItalic.ttf) format("truetype"), url(fonts/Austin-MediumItalic.svg#e3b170a28556b36b08b9b6f49803ddd2) format("svg");
-  font-style: italic;
-  font-weight: 400; }
-
-@font-face {
-  font-family: 'Austin Roman';
-  src: url(fonts/Austin-Roman.eot);
-  src: url(fonts/Austin-Roman.eot?#iefix) format("embedded-opentype"), url(fonts/Austin-Roman.woff) format("woff"), url(fonts/Austin-Roman.ttf) format("truetype"), url(fonts/Austin-Roman.svg#331c71b8186a1cc89272716ca9d778aa) format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: 'Austin Semibold';
-  src: url(fonts/Austin-SemiboldItalic.eot);
-  src: url(fonts/Austin-SemiboldItalic.eot?#iefix) format("embedded-opentype"), url(fonts/Austin-SemiboldItalic.woff) format("woff"), url(fonts/Austin-SemiboldItalic.ttf) format("truetype"), url(fonts/Austin-SemiboldItalic.svg#49a2eb8683b770408961f3641f57a5dc) format("svg");
-  font-style: italic;
-  font-weight: 700; }
-
-@font-face {
-  font-family: 'Sofia Pro Black';
-  src: url("fonts/Sofia Pro Black.eot");
-  src: url("fonts/Sofia Pro Black.eot?#iefix") format("embedded-opentype"), url("fonts/Sofia Pro Black.woff") format("woff"), url("fonts/Sofia Pro Black.ttf") format("truetype"), url("fonts/Sofia Pro Black.svg#c64e59b299fdf9dcc324e9d3fa638242") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: 'Sofia Pro Regular';
-  src: url("fonts/Sofia Pro Regular.eot");
-  src: url("fonts/Sofia Pro Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Sofia Pro Regular.woff") format("woff"), url("fonts/Sofia Pro Regular.ttf") format("truetype"), url("fonts/Sofia Pro Regular.svg#afdea9644759cd81a2110c25f5517622") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
+/*
+@font-face{font-family:'Austin Light';src:url();src:url() format('embedded-opentype'),url() format('woff'),url() format('truetype'),url() format('svg');font-style:normal;font-weight:200}
+@font-face{font-family:'Austin Medium';src:url();src:url() format('embedded-opentype'),url() format('woff'),url() format('truetype'),url() format('svg');font-style:italic;font-weight:400}
+@font-face{font-family:'Austin Roman';src:url();src:url() format('embedded-opentype'),url() format('woff'),url() format('truetype'),url() format('svg');font-style:normal;font-weight:400}
+@font-face{font-family:'Austin Semibold';src:url();src:url() format('embedded-opentype'),url() format('woff'),url() format('truetype'),url() format('svg');font-style:italic;font-weight:700}
+@font-face{font-family:'Sofia Pro Black';src:url('');src:url('') format('embedded-opentype'),url('') format('woff'),url('') format('truetype'),url('') format('svg');font-style:normal;font-weight:400}
+@font-face{font-family:'Sofia Pro Regular';src:url('');src:url('') format('embedded-opentype'),url('') format('woff'),url('') format('truetype'),url('') format('svg');font-style:normal;font-weight:400}
+*/
 body
 , html {
   width: 100%;
   overflow-x: hidden; }
 
 body {
-  background: url(../img/dark-pattern.png) top left #fff;
+  background: top left #fff;
   -webkit-font-smoothing: antialiased; }
 
 .page-container {
@@ -699,7 +665,7 @@ header.main-header {
   text-align: center;
   text-transform: uppercase;
   z-index: 0;
-  background: url(../img/dark-pattern.png) top left #000; }
+  background: top left #000; }
 
 header.main-header .inner {
   position: absolute;
@@ -1318,7 +1284,7 @@ body.IE-9 .page-artist .serie.right-hover .sides .right .arrow .inner-arrow {
 
 .page-artist .more-artists {
   padding: 100px 0 0;
-  background: url(../img/dark-pattern.png) top left #000; }
+  background: top left #000; }
 
 .page-artist .more-artists .artists {
   margin: 0 0 182px; }
