@@ -1531,7 +1531,7 @@ a.custom {
     color: #333;
     font: 15px "Apple LiSung Light","Microsoft YaHei";
     margin-top: 15px;
-    line-height: 16px; }
+    line-height: 20px; }
   .intro-wrap .intro-wrap_subtitle {
     margin-top: 10px;
     color: #999;
@@ -1782,13 +1782,19 @@ a.custom {
 
 .collection-page__section_img img {
   width: 250px;
-  height: auto; }
+  height: auto;
+  vertical-align: bottom; }
 
 .collection-page__nav {
   height: 40px;
   line-height: 40px;
   text-align: center;
   margin-top: 50px; }
+
+.collection-page__nav_back {
+  margin-top: 10px;
+  cursor: pointer;
+  letter-spacing: 1px; }
 
 .collection-page__nav img {
   height: 40px;

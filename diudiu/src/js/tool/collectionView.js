@@ -21,7 +21,7 @@ function location(parent, child) {
         }
     }
 
-    return boxHeightArray.sort()[cols - 1]
+    return boxHeightArray.sort(function(a,b){return a-b;})[cols - 1];
 }
 
 function getIndex(boxHeightArray, mingHeight) {
