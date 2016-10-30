@@ -208,7 +208,7 @@ a.custom {
   margin: 0 8px;
   font-family: 'Austin Semibold',Times,"Times New Roman",serif;
   text-transform: none;
-  font-style: italic;
+  font-style: normal;
   letter-spacing: .5px; }
 
 a.custom span.long {
@@ -1487,7 +1487,7 @@ a.custom {
   margin: 0 8px;
   font-family: 'Microsoft Tai Le',Times,"Times New Roman",serif;
   text-transform: none;
-  font-style: italic;
+  font-style: normal;
   letter-spacing: 1px;
   vertical-align: middle; }
 
@@ -1516,8 +1516,9 @@ a.custom {
           align-items: center;
   text-align: left; }
   .intro-wrap .intro-wrap_desc {
-    width: 350px;
-    height: auto; }
+    width: 392px;
+    height: auto;
+    margin-right: 164px; }
   .intro-wrap .intro-wrap_img {
     width: 350px;
     height: 100%;
@@ -1534,8 +1535,8 @@ a.custom {
   .intro-wrap .intro-wrap_subtitle {
     margin-top: 10px;
     color: #999;
-    font: 9px "Apple LiSung Light","Microsoft YaHei";
-    line-height: 10px; }
+    font: 13px "Apple LiSung Light","Microsoft YaHei";
+    line-height: 15px; }
   .intro-wrap .intro-wrap_title_top {
     margin-top: 30px; }
   .intro-wrap .intro-wrap_close {
@@ -1605,7 +1606,7 @@ a.custom {
   margin-top: 30px;
   opacity: 0.6;
   font: normal 10px 'Microsoft Tai Le';
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   line-height: 20px; }
 
 .section-two {
@@ -1624,7 +1625,7 @@ a.custom {
   height: 130px;
   background: center/contain no-repeat url(../../icon/text_2.png);
   position: absolute;
-  left: 50%;
+  left: 53%;
   top: 24%;
   margin-left: -96px; }
 
@@ -1677,7 +1678,7 @@ a.custom {
   cursor: pointer; }
   .section-two__nav .section-two__nav_desc {
     width: 35px;
-    margin-right: 25px;
+    margin-right: 14px;
     line-height: 40px; }
   .section-two__nav .section-two__nav_arrow {
     height: 40px;
@@ -1738,3 +1739,102 @@ a.custom {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   cursor: pointer; }
+
+.collection-page {
+  display: none;
+  padding: 75px 30px 100px; }
+
+.collection-page__header {
+  text-align: center; }
+
+.collection-page__header_title {
+  text-align: center;
+  color: #000;
+  font: bolder 24px 'Microsoft Tai Le';
+  line-height: 24px;
+  height: 24px; }
+
+.collection-page__header_line {
+  display: inline-block;
+  margin-top: 25px;
+  height: 4px;
+  width: 45px;
+  background-color: #999; }
+
+.collection-page__header_subtitle {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #000;
+  font: 12px 'Microsoft Tai Le';
+  line-height: 12px;
+  height: 12px; }
+
+.collection-page__section {
+  position: relative; }
+
+.collection-page__section_img {
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  float: left;
+  padding: 10px;
+  cursor: zoom-in; }
+
+.collection-page__section_img img {
+  width: 250px;
+  height: auto; }
+
+.collection-page__nav {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 50px; }
+
+.collection-page__nav img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  -webkit-animation: autoscroll 3s linear 0s infinite;
+          animation: autoscroll 3s linear 0s infinite; }
+  .collection-page__nav img:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused; }
+
+@-webkit-keyframes autoscroll {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes autoscroll {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.section-float {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  display: none;
+  cursor: zoom-out; }
+
+.section-float__img {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition-property: top, left, width, height, -webkit-transform;
+  transition-property: top, left, width, height, -webkit-transform;
+  transition-property: top, left, width, height, transform;
+  transition-property: top, left, width, height, transform, -webkit-transform;
+  -webkit-transition-duration: .25s, .25s, .25s, .25s, .25s;
+          transition-duration: .25s, .25s, .25s, .25s, .25s;
+  -webkit-transition-delay: 0s, 0s, 0s, 0s, 0s;
+          transition-delay: 0s, 0s, 0s, 0s, 0s; }

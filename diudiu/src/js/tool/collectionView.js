@@ -20,6 +20,8 @@ function location(parent, child) {
            boxHeightArray[minIndex] = boxHeightArray[minIndex] + childArray[i].offsetHeight;
         }
     }
+
+    return boxHeightArray.sort()[cols - 1]
 }
 
 function getIndex(boxHeightArray, mingHeight) {
@@ -34,7 +36,7 @@ function getChild(parent, child) {
     var contentArray = [];
     var allcontent = parent.getElementsByTagName("*");
     for (var i = 0; i < allcontent.length; i++) {
-        if (allcontent[i].className == child) {
+        if (allcontent[i].className.indexOf(child) > -1) {
             contentArray.push(allcontent[i]);
         }
     }

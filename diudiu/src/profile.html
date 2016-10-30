@@ -19,7 +19,7 @@
     <header class="main-header expanded">
         <div class="inner">
             <h1>
-                <img src="http://www.valeriemartinez.com/src/img/white-logo.png" alt="THIS IS ABOUT ME"><br /><span>THIS IS ABOUT ME</span>
+                <img src="../icon/white.png" alt="THIS IS ABOUT ME"><br /><span>THIS IS ABOUT ME</span>
             </h1>
             <div class="buttons">
                 <a class="custom dark-background about" id="me_btn" href="#">WHO<span class="longg"> AM I</span><span class="text-hover-container"><span class="text-hover">WHO<span class="longg"> AM I</span></span></span><span class="bar bar-1"></span><span class="bar bar-2"></span><span class="bar bar-3"></span><span class="bar bar-4"></span><span class="bar bar-1 hover"></span><span class="bar bar-2 hover"></span><span class="bar bar-3 hover"></span><span class="bar bar-4 hover"></span></a>
@@ -30,9 +30,10 @@
 
     <!-- PAGE -->
     <section class="page-container translate-z-fix" id="container">
+        <!-- 首页 -->
         <div class="section-one">
             <div class="section-one__wrap">
-                <div class="section-one__nav"></div>
+                <div class="section-one__nav j_nav"  data-index="0"></div>
                 <!-- <div class="section-one__content"> -->
                 <div class="section-one__hi">Welcome to me</div>
                 <div class="section-one__title">PAINTING</div>
@@ -71,8 +72,8 @@
                 </div>
             </div>
             <div class="section-two__nav">
-                <span class="section-two__nav_desc">More</span>
-                <span class="section-two__nav_arrow"></span>
+                <span class="section-two__nav_desc j_nav" data-index="1">More</span>
+                <span class="section-two__nav_arrow j_nav" data-index="1"></span>
             </div>
         </div>
         <div class="section-three">
@@ -108,7 +109,21 @@
                     </div>
                 </div>
             </div>
-            <div class="section-three__nav"></div>
+            <div class="section-three__nav j_nav" data-index="2"></div>
+        </div>
+        <!-- 作品集 -->
+        <div class="collection-page" id="collection">
+            <div class="collection-page__header">
+                <div class="collection-page__header_title">PAINTING</div>
+                <div class="collection-page__header_line"></div>
+                <div class="collection-page__header_subtitle">A growing history about my painting</div>
+            </div>
+            <div class="collection-page__section" id="imgs">
+                <div class="collection-page__section_img"></div>
+            </div>
+            <div class="collection-page__nav">
+                <img id="collection_back" src="../icon/back.png">
+            </div>
         </div>
     </section>
 
@@ -128,7 +143,7 @@
     </footer>
 
     <!-- 个人简介 -->
-    <div class="about panel saved fixed-logo animated" id="introduction" style="display: block;">
+    <div class="about panel fixed-logo animated" id="introduction" style="display: block;">
         <div class="intro-wrap">
             <div class="intro-wrap_desc">
                 <div class="intro-wrap_top-title">自我简介</div>
@@ -155,6 +170,11 @@
 
         </div> 
     </div>
+
+
+    <!-- 图片浮层 -->
+    <div class="section-float" id="img_detail">    </div>
+
 
     <script type="text/javascript" src="./js/index_v2.js?__inline"></script>
 </body>
