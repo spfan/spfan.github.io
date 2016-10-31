@@ -66,7 +66,7 @@ gulp.task('release-module', function() {
 				path.dirname = path.dirname + '/' + year + month + day;
 			}
 		}, parseHtml.mapPicker) )
-		.pipe( gulp.dest( './' ) )
+		.pipe( gulp.dest( './' ) );
 });
 
 gulp.task('release',['release-module', 'sass'], function() {

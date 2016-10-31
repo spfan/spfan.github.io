@@ -585,7 +585,7 @@ var Collection = require('./tool/collectionView.js');
                         $('#imgs').css('height', oldHeight + offset + 'px');
                         $('#imgs').attr('data-intheight', oldHeight);
                     }
-                }, 200);
+                }, 400);
             }, 20);
         }).on('click', '#img_detail', function(e){
             var $currImg   = $(this).find('.select');
