@@ -1557,6 +1557,22 @@ a.custom {
     .intro-wrap .intro-wrap_close:hover {
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg); }
+  .intro-wrap .intro-wrap__find-me {
+    height: 25px;
+    margin: 30px 0;
+    font: 12px "Apple LiSung Light","Microsoft YaHei"; }
+    .intro-wrap .intro-wrap__find-me .intro-wrap__find-me_url {
+      display: inline-block;
+      padding: 10px 20px 10px 10px;
+      background-color: #fff; }
+    .intro-wrap .intro-wrap__find-me .intro-wrap__find-me_btn {
+      display: inline-block;
+      font-size: 13px;
+      padding: 10px;
+      background-color: #f73e3f;
+      color: #fff;
+      letter-spacing: 1px;
+      outline: none; }
 
 .section-one {
   display: -webkit-box;
