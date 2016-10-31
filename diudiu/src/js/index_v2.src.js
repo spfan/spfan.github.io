@@ -6,7 +6,8 @@ var Collection = require('./tool/collectionView.js');
 (function (doc, win, $) {
     var _Tpl = {
             img: '<div class="collection-page__section_img j_img" data-index="{index}"><div style="box-shadow: 0 1px 3px rgba(0,0,0,.3);"><img style="height: {height}px;" src="{content}"></div></div>',
-            detail: ' <img class="section-float__img" data-index="{index}" src="{url}" style="left: {left}px;top: {top}px;width: {width}px;height: {height}px;">'
+            detail: ' <img class="section-float__img" data-index="{index}" src="{url}" style="left: {left}px;top: {top}px;width: {width}px;height: {height}px;">',
+            collectionHeader: '<div class="collection-page__header_title">{title}</div> <div class="collection-page__header_line"></div> <div class="collection-page__header_subtitle">{subtitle}</div> </div>'
         },
         _Images = [
             [
@@ -456,6 +457,16 @@ var Collection = require('./tool/collectionView.js');
                 }
             ]
         ],
+        _CollectionHeadData = [{
+            title: 'PAINTING',
+            subtitle: 'A growing history about my painting'
+        },{
+            title: 'The plane design',
+            subtitle: 'Some of the things I tried'
+        },{
+            title: 'Interface design',
+            subtitle: 'I want to do a good job'
+        }],
         _Param = {};
 
     function init() {
@@ -537,6 +548,10 @@ var Collection = require('./tool/collectionView.js');
             ['section-one', 'section-two', 'section-three'].forEach(function(e){
                 $('.' + e).hide();
             });
+
+            // 设置头部
+            $('#collection-header').html( mktpl( _CollectionHeadData[i],_Tpl.collectionHeader ) );
+
             $('#collection').show();
 
             arr.forEach(function(e, i){
