@@ -2,21 +2,29 @@
 <html>
 <head>
 	<title>丢丢的计算机</title>
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-	<div>
-		<label for="width">宽度<input id="width" value="335" type="number"></label>
-		<label for="piece_num">块数<input id="piece_num" type="number"></label>
-		<!-- <label>块宽范围<input id="min" type="number"><input id="max" type="number"></label> -->
-		<button id="btn">计算</button>
-	</div>
-	<table>
-		<thead>
-			<tr>
-				<th>块宽</th><th>间宽</th>
-			</tr>
-		</thead>
-		<tbody id="result"></tbody>
+	<form onsubmit="return false;" class="form-inline">
+	  <div class="form-group">
+	      <label  for="width">宽度</label>
+	      <input id="width" class="form-control" value="335" type="number">
+	  </div>
+	  <div class="form-group">
+			  <label for="piece_num">块数</label>
+	      <input id="piece_num" class="form-control" type="number">
+	  </div>
+		<button class="btn btn-default" id="btn">计算</button>
+	</form>
+
+
+	<table class="table table-striped table-hover">
+	  <thead>
+	    <tr>
+	      <th>块宽</th><th>间宽</th>
+	    </tr>
+	  </thead>
+	  <tbody id="result"></tbody>
 	</table>
 	<script type="text/javascript">
 		function s(id) {
