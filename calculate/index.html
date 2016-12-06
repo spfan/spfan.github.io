@@ -42,7 +42,7 @@
 				dis = piece_num - 1,
 				msg = [];
 
-			while( x <= max ){
+			while( x <= max && y > 0 ){
 				y = ( width - x * dis ) / piece_num;
 				if((y + '').indexOf('.') === -1){
 					msg.push('<tr><td>' + y + '</td><td>' + x + '</td></tr>')
