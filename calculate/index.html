@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>丢丢的计算机</title>
+</head>
+<body>
+	<div>
+		<label for="width">宽度<input id="width" value="335" type="number"></label>
+		<label for="piece_num">块数<input id="piece_num" type="number"></label>
+		<!-- <label>块宽范围<input id="min" type="number"><input id="max" type="number"></label> -->
+		<button id="btn">计算</button>
+	</div>
+	<table>
+		<thead>
+			<tr>
+				<th>块宽</th><th>间宽</th>
+			</tr>
+		</thead>
+		<tbody id="result"></tbody>
+	</table>
+	<script type="text/javascript">
+		function s(id) {
+			return document.getElementById(id);
+		}
+
+		var btn = s('btn'),result = s('result');
+
+
+		btn.onclick= function () {
+			var bug = 0;
+			var width = s('width').value,
+				piece_num = s('piece_num').value,
+				min = 1,
+				max = width;
+			result.innerHTML = '';
+			if(width * piece_num * min * max <= 0 || piece_num <= 1){
+				alert('输入正确的数据');
+				return;
+			}
+			var y = min,
+				x = 1,
+				dis = piece_num - 1,
+				msg = [];
+
+			while( y >= min && y <= max ){
+				y = ( width - x * dis ) / piece_num;
+				if((y + '').indexOf('.') === -1){
+					msg.push('<tr><td>' + y + '</td><td>' + x + '</td></tr>')
+				}
+				x = x +1;
+				if(++bug > 1000){
+					alert('逻辑问题');
+					return;
+				}
+			}
+			if(msg.length > 0){
+				result.innerHTML = msg.join('');
+			}else{
+				result.innerHTML = '木有整数数据，换个呗！';
+			}
+		}
+	</script>
+</body>
+</html>
